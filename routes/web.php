@@ -60,3 +60,5 @@ route::get('/tarefas',function(){
 	$tarefas=['comprar senha','imprimir fotocopias','carregar cartão'];
 	return view ('tarefas',['tarefas'=>$tarefas]);
 });
+
+route::get('/', 'app\http\Controllers\PortalController@index');
