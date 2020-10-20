@@ -67,9 +67,12 @@ route::get('/', 'PortalController@index');
 
 route::get('/','Portal@index');
 
+
 route::get('/listar-equipas/','PortalController@listarEquipas');
 
- route::get('/listar-equipas/{chave}','PortalController@listarEquipas');
+route::get('/listar-equipas/','PortalController@listarEquipa');
+
+ route::get('/listar-equipas/{chave}','PortalController@listarEquipa');
 
 
 

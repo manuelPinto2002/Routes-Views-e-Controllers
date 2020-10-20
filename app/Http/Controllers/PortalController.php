@@ -16,7 +16,7 @@ public function listarEquipas(){
     		'Moreirense',
     		'famalicão'
     	];
-    		return view('listar-equipas',['equipas'=>$teams);
+    		return view('listar-equipas',['equipas'=>$teams]);
 
 }
 
