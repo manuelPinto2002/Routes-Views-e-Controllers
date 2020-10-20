@@ -32,7 +32,7 @@ public function listarEquipas(){
     	else{
     		$equipa= "Não foi possivel obter a info petendida";
     	}
-    	return view('listar-equipas',['equipas'=>$equipa]);
+    	return view('listar-equipas',['equipa'=>$equipa]);
 
 
     }
