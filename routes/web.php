@@ -61,4 +61,16 @@ route::get('/tarefas',function(){
 	return view ('tarefas',['tarefas'=>$tarefas]);
 });
 
-route::get('/', 'app\http\Controllers\PortalController@index');
+route::get('/', 'PortalController@index');
+
+
+
+route::get('/','Portal@index');
+
+route::get('/listar-equipas/','PortalController@listarEquipas');
+
+ route::get('/listar-equipas/{chave}','PortalController@listarEquipas');
+
+
+
+?>
